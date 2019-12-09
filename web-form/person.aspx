@@ -8,8 +8,19 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div style="height: 0px">
         </div>
+        <asp:TextBox ID="nameTxtBox" runat="server" placeholder="Name"></asp:TextBox>
+        <asp:TextBox ID="cityTxtBox" runat="server" placeholder="City"></asp:TextBox>
+        <asp:TextBox ID="contactTxtBox" runat="server" placeholder="Contact"></asp:TextBox>
+
+        <asp:Button ID="insertBtn" runat="server" Text="Insert" OnClick="insertBtn_Click" />
+        <asp:Button ID="updateBtn" runat="server" Text="Update" OnClick="updateBtn_Click" />
+        <asp:Button ID="deleteBtn" runat="server" Text="Delete" OnClick="deleteBtn_Click" />
+
+        <asp:GridView ID="GridView1" runat="server">
+        </asp:GridView>
+
     </form>
 </body>
 </html>
